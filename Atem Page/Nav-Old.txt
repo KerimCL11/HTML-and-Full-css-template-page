@@ -1,0 +1,33 @@
+nav {
+    text-align: right;
+    padding: 10px 50px 0;
+    vertical-align: middle;
+    background: rgba(0, 0, 0, 0.511);
+    height: 80px;
+
+}
+
+.nav-img{
+    position: absolute;
+}
+
+.nav-img>img{
+    height: 70px;
+    width: auto;
+}
+
+nav>a {
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+nav>a:hover {
+    text-decoration: underline;
+    /*
+    color: #016d2e;
+    font-size: 40px;
+    transform:scale(1);
+    */
+}

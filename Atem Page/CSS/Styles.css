@@ -1,0 +1,408 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'open sans';
+}
+
+.container {
+    padding-top: 45px;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    padding-bottom: 60px;
+}
+
+.divisor{
+    width: 95%;
+    background:#066698;
+    height: 5px;
+    margin: auto;
+}
+
+.tittle {
+    color: #066698;
+    font-family: 'Lucida Console';
+    font-size: 60px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+/*header*/
+header {
+    width: 100%;
+    height: 800px;
+    /*Gradientes*/
+    background: #F0F2F0;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #f0f2f0ab, #000c40bd), url(../Img/Back.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #f0f2f0ab, #000c40bd), url(../Img/Back.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.divisortop {
+    width: 100%;
+    background:#066698;
+    height: 15px;
+    position: sticky;
+    top: 80px;
+    z-index: 1000;
+}
+
+.nav-container {
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    /*background: linear-gradient(to bottom, #000c40bd, #ffffff28);*/
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+}
+
+.nav-container img {
+    height: 80px;
+    cursor: pointer;
+}
+
+.nav {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav ul li {
+    list-style: none;
+    display: inline;
+    margin: 0 20px;
+    position: relative;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-family: Roboto, sans-serif;
+    font-size: 1.2rem;
+    transition: 0.4s ease-out;
+}
+
+.nav ul li::before {
+    content: "";
+    height: 3px;
+    width: 0%;
+    background: #016d2e;
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    transition: 0.6s ease-out;
+}
+
+.nav ul li:hover::before {
+    width: 100%;
+}
+
+
+
+.NavLabel {
+    display: none;
+}
+
+.NavMenu{
+    display: none;
+}
+
+
+header .textos-header {
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-top: 350px;
+    text-align: center;
+}
+
+.textos-header>h1 {
+    font-family: 'Lucida Console';
+    font-size: 100px;
+    color: rgb(14, 8, 112);
+    border-bottom: 3px solid #016d2e;
+    margin-bottom: 0;
+}
+
+.textos-header>h2 {
+    font-family: 'Lucida Console';
+    font-size: 85px;
+    color: #016d2e;
+}
+
+.container-about-us {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.aboutus {
+    width: 48%;
+}
+
+.About-Us .container-textos {
+    width: 45%;
+}
+
+
+
+.container-textos h3 {
+    margin-bottom: 15px;
+}
+
+.container-textos h3 span {
+    background: #142d70;
+    color: white;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 28px;
+    height: 30px;
+    padding: 0px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    margin-right: 2px;
+}
+
+.container-textos p {
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.basicInfo {
+    background: #f2f2f2;
+}
+
+.galery-parts {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.image-port {
+    width: 24%;
+    margin-bottom: 10px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.image-port>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-galeria {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: rgba(24, 24, 166, 0.593);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria img {
+    width: 100px;
+}
+
+.hover-galeria p {
+    color: #fff;
+}
+
+.image-port:hover .hover-galeria {
+    transform: scale(1);
+}
+
+/*Our Staf*/
+
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cards .card {
+    background: #203b87ee;
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.cards .card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    display: block;
+}
+
+.cards .card>.container-text-card {
+    width: 66%;
+    color: white;
+
+}
+
+.cards .card>.container-text-card p {
+    font-weight: 300;
+    padding-top: 5px;
+}
+
+.staff {
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+/*Footer*/
+
+footer {
+    background: #414141;
+    padding: 20px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.container-footer {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.container-foo {
+    text-align: center;
+}
+
+.content-foo h4 {
+    color: #fff;
+    border-bottom: 3px solid #066698;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content-foo p {
+    color: #ccc;
+}
+
+.tittle-final {
+    text-align: center;
+    font-size: 24px;
+    margin: 10px 0 0 0;
+    color: #ffffff;
+}
+
+
+/*RESPECTIVO A 977 PX*/
+
+@media screen and (max-width:977px) {
+
+    header {
+        background-position: center;
+    }
+
+    .nav ul li {
+        margin: 0 10px ;
+    }
+
+    .container-about-us {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .About-Us .container-textos {
+        width: 90%;
+    }
+
+    .aboutus {
+        width: 90%;
+        padding-bottom: 10px;
+    }
+
+    .image-port {
+        width: 44%;
+    }
+
+    .cards {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cards .card {
+        width: 90%;
+
+    }
+
+    .cards .card:first-child {
+        width: 90%;
+        margin-bottom: 30px;
+
+    }
+
+    .container-footer {
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 755px){
+    .NavLabel{
+        display: block;
+        cursor:pointer;
+    }
+
+    .nav ul{
+        position:fixed;
+        top: 80px;
+        bottom: 0;
+        background: rgb(0, 103, 172);
+        width: 100%;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        clip-path: polygon(0 0 , 0 0, 0 100%, 0% 100%);
+        transition: 1s ease-in-out;
+        
+    }
+
+    .NavMenu:checked + .ListaOpciones{
+        clip-path: polygon(0 0 , 100% 0,100% 100%, 0% 100%);
+    } 
+}

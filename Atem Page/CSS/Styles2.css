@@ -1,0 +1,465 @@
+.divisortop {
+    width: 100%;
+    background: #1c2c44;
+    height: 15px;
+    position: sticky;
+    top: 80px;
+    z-index: 1000;
+}
+
+.napv {
+    width: 100%;
+}
+
+.nav-container {
+    width: 100%;
+    height: 80px;
+    background-color: #ffffff;
+    /*background: linear-gradient(to bottom, #000c40bd, #ffffff28);*/
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+}
+
+.nav-container img {
+    height: 80px;
+    cursor: pointer;
+}
+
+.nav {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    margin: auto;
+}
+
+.nav ul li {
+    list-style: none;
+    display: inline;
+    margin: 0 20px;
+    position: relative;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-family: Roboto, sans-serif;
+    font-size: 1.2rem;
+    transition: 0.4s ease-out;
+}
+
+.nav ul li::before {
+    content: "";
+    height: 3px;
+    width: 0%;
+    background: #016d2e;
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    transition: 0.6s ease-out;
+}
+
+.nav ul li:hover::before {
+    width: 100%;
+}
+
+.NavLabel {
+    display: none;
+}
+
+.NavMenu {
+    display: none;
+}
+
+.imagebg {
+    background-image: url(../Img/SuperBg.png);
+    height: 800px;
+    margin: auto;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+    justify-content: space-evenly;
+}
+
+.containertopgeneral {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.firstblock {
+    width: 70%;
+    padding-top: 250px;
+}
+
+.secondblock {
+    width: 30%;
+}
+
+.containerTransparente {
+    width: 100%;
+    height: 250px;
+    background: rgba(0, 0, 0, 0.316);
+    padding-right: 40%;
+    padding-left: 30px;
+    padding-top: 15px;
+
+}
+
+.containerTransparente p {
+    padding-top: 20px;
+    color: bisque;
+    text-align: justify;
+}
+
+.containerTransparente h1 {
+    color: bisque;
+    font-size: 55px;
+}
+
+.containerblack {
+    height: 100%;
+    background: rgb(0, 0, 0);
+    padding-top: 180px;
+    text-align: center;
+}
+
+.containerblack h2 {
+    font-size: 80px;
+    text-align: center;
+    color: white;
+
+}
+
+.containerblack p {
+    padding-top: 15px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    margin: 50px;
+}
+
+/*Info de en medio*/
+
+.Info {
+    width: 100%;
+    background: url(../Img/descargar.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 1400px;
+}
+
+.MainBody {
+    width: 90%;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Uno {
+    display: flex;
+    height: 60%;
+    margin-bottom: 150px;
+}
+
+.Uno h2 {
+    font-size: 100px;
+    color: white;
+}
+
+.Uno p {
+    font-size: 20px;
+    color: white;
+}
+
+.Uno img {
+    height: 450px;
+}
+
+.TextoUno {
+    display: flex;
+    flex-direction: column;
+    padding-right: 100px;
+}
+
+.Dos {
+    width: 90%;
+    height: 630px;
+    justify-content: center;
+}
+
+.DosPadding {
+    width: 800px;
+    margin-right: auto;
+}
+
+.TextoDos {
+    height: 400px;
+    width: 400px;
+    padding: 30px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background: #0870d8;
+    position: absolute;
+    margin-top: 115px;
+    margin-bottom: 115px;
+    z-index: 999;
+}
+
+.TextoDos h2 {
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    padding-bottom: 30px;
+}
+
+.Dos p {
+    font-size: 20px;
+    color: white;
+    text-align: justify;
+    position: absolutes;
+}
+
+.Dos img {
+    width: 600px;
+    height: 100%;
+    margin-left: 200px;
+}
+
+/*MainBody2*/
+.MainBody2 {
+    width: 90%;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.txtcontainers {
+    width: 100%;
+}
+
+.introduction {
+    display: flex;
+    width: 100%;
+}
+
+.txtizquierda {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 30px;
+}
+
+.txtizquierda h1 p {
+    text-align: justify;
+}
+
+.txtizquierda h1 {
+    color: rgb(14, 8, 112);
+}
+
+.txtderecha {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 30px;
+
+}
+
+.txtderecha p {
+    text-align: justify;
+}
+
+.txtgenerico {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.txtgenerico h1 {
+    color: rgb(14, 8, 112);
+}
+
+.txtgenerico p {
+    text-align: justify;
+}
+
+/*Footer*/
+
+footer {
+    background: #414141;
+    padding: 20px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.container-footer {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.container-foo {
+    text-align: center;
+}
+
+.content-foo h4 {
+    color: #fff;
+    border-bottom: 3px solid #066698;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content-foo p {
+    color: #ccc;
+}
+
+.tittle-final {
+    text-align: center;
+    font-size: 24px;
+    margin: 10px 0 0 0;
+    color: #ffffff;
+}
+
+
+
+@media screen and (max-width:1426px) {
+    .Uno {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .TextoUno {
+        padding-right: 0px;
+    }
+
+    .TextoUno h2 {
+        padding: 30px;
+        text-align: center;
+    }
+
+    .Uno img {
+        padding: 50px;
+        height: 450px;
+        width: 600px;
+    }
+
+}
+
+@media screen and (max-width:1000px) {
+
+    /*.Dos informations*/
+    .Dos {
+        width: 100%;
+        height: 400px;
+    }
+
+    .DosPadding {
+        width: 600px;
+        margin-right: 0;
+    }
+
+    .TextoDos {
+        height: 200px;
+        width: 200px;
+        padding: 15px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        background: #0870d8;
+        position: absolute;
+        margin-top: 57.5px;
+        margin-bottom: 57.5px;
+        z-index: 999;
+    }
+
+    .TextoDos h2 {
+        display: none;
+    }
+
+    .TextoDos p {
+        font-size: 18px;
+        color: white;
+        text-align: justify;
+        position: absolutes;
+    }
+
+}
+
+@media screen and (max-width:1198px) {
+    .containerTransparente p {
+        display: none;
+    }
+
+    .imagebg {
+        width: 100%;
+    }
+
+    .container-footer {
+        flex-direction: column;
+    }
+
+    .containerblack p {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 755px) {
+
+    .secondblock {
+        display: none;
+    }
+
+    .containerblack {
+        display: none;
+    }
+
+    .firstblock {
+        width: 100%;
+    }
+
+    .NavLabel {
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav ul {
+        position: fixed;
+        top: 80px;
+        bottom: 0;
+        background: rgb(0, 103, 172);
+        width: 100%;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+        transition: 1s ease-in-out;
+
+    }
+
+    .NavMenu:checked+.ListaOpciones {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+
+    }
+
+}
